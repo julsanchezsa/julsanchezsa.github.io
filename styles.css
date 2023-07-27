@@ -1,11 +1,3 @@
-/*
-1. Posicionamiento --> static, absolute, relative, fixed
-2. Modelo de caja (Box model) --> margin, border, padding, content
-3. Tipografía --> tipos, tamaños de fuente, etc
-4. Estilos visuales --> box-shadow, border-radius, gradient, etc
-5. Otros --> reglas CSS y más
-*/
-
 :root {
   /* Colores */
   --background-color: #0c081b;
@@ -68,4 +60,28 @@ main {
   max-width: 95%;
   max-height: 95%;
   object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    height: 90%;
+  }
+  .explication-container{
+    width: 100%;
+    height: 100%;
+    padding: 5%;  
+    font-size: 12px;
+  } 
+  .solution-container{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .explication-container{ 
+    font-size: 13px;
+    padding: 4%;
+  } 
 }
